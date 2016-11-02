@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/item_padding"
+    android:background="@drawable/home_entry_item_selector"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="@dimen/oneImg_height"
+        android:layout_height="@dimen/oneImg_height"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/img_left"
+        android:textSize="@dimen/one_img_text_size"
+        android:textColor="@color/black"
+        android:text="大字标题" />
+
+    <TextView
+        android:id="@+id/tv_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最新跟帖"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/img_left"
+        android:layout_alignBottom="@+id/img_left"
+        android:gravity="right"
+        android:textColor="#ea0" />
+
+</RelativeLayout>
